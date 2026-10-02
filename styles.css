@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #17243a;
+}
+
+header {
+  background: #142b4a;
+  color: white;
+  padding: 22px 8%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 75px 20px;
+  background: white;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 14px;
+}
+
+.hero p {
+  color: #64748b;
+  font-size: 18px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 13px 24px;
+  background: #142b4a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background: #24466f;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #64748b;
+}
+
+
+.products {
+  padding: 60px 8%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 18px rgba(20, 43, 74, 0.08);
+}
+
+.product-image {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaf0f8;
+  border-radius: 8px;
+  color: #24466f;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.product-type {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 5px 10px;
+  background: #eaf0f8;
+  color: #24466f;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.product-card h3 {
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  color: #64748b;
+  line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #142b4a;
+  margin: 15px 0;
+}
+
+.product-button {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  background: #142b4a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.product-button:hover {
+  background: #24466f;
+}
+
+
+/* Penyesuaian tampilan untuk layar kecil */
+@media (max-width: 800px) {
+  header {
+    padding: 20px 5%;
+  }
+
+  .products {
+    padding: 40px 5%;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero {
+    padding: 50px 18px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .products {
+    padding: 30px 18px;
+  }
+
+  .product-card {
+    padding: 16px;
+  }
+}
